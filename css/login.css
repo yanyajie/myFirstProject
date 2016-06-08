@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-user-select: none;
+}
+body{
+    font-family: helvetica, Î¢ÈíÑÅºÚ, "microsoft yahei", verdana, lucida, arial, sans-serif, ºÚÌå;
+    font-size: 14px;
+    font-style: normal;
+    color: #333333;
+    background: #e5e5e5;
+
+}
+img,input{
+    border: none;
+    outline: none;
+    /*µã»÷ºó input³öÏÖµÄ±ß¿ò*/
+    vertical-align: middle;/*´¹Ö±¾ÓÖÐ*/
+}
+.clear{
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+a{
+    text-decoration: none;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+a:hover{
+    color: #0088cc;
+}
+
+
+/*header*/
+.header{
+    position: relative;
+    background: #192332;
+    min-width: 1092px;
+    height: 60px;
+    padding: 0 88px 0 20px;
+}
+.header .line{
+    height: 60px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-left: 1px solid #141c28;
+    border-right: 1px solid #303947;
+    overflow: hidden;
+}
+.header .headerContent{
+    height: 60px;
+}
+.header .headerContent h1{
+    width: 136px;
+    height: 42px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -68px;
+    margin-top: -21px;
+}
+.header .headerContent h1 a{
+    text-decoration: none;
+    background: url("../images/head.png") no-repeat;
+    width: 136px;
+    height: 42px;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+}
+.header .headerContent .headerList{
+    /*float: left;*/
+    font-size: 15px;
+}
+.header .headerContent .headerList li{
+    float: left;
+}
+.header .headerContent .headerList li a{
+    position: relative;
+    margin-right: 30px;
+    line-height: 60px;
+    font-size: 15px;
+    color: #c8c8c8;
+}
+.header .headerContent .headerList li a:hover{
+    color: #ffffff;
+}
+.header .headerContent .headerList li a em{
+    background: url("../images/head.png") -165px 0 no-repeat;
+    width: 28px;
+    height: 14px;
+    position: absolute;
+    right: -26px;
+    top: 15px;
+    font-size: 0;
+    line-height: 0;
+}
+.header .headerContent .bayCar{
+    height: 64px;
+    background: #e83729;
+    width: 68px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.header .headerContent .bayCar i{
+    top: 19px;
+    background: url("../images/head.png") 0 -45px no-repeat;
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    left: 19px;
+}
+.header .headerContent .loginBox{
+    float: right;
+    position: relative;
+    padding: 0 18px;
+}
+.header .headerContent .loginBox .loginContent{
+    position: relative;
+    padding: 0 17px;
+}
+.header .headerContent .loginBox .loginContent a{
+    line-height: 60px;
+    display: inline-block;
+    height: 60px;
+    opacity: 0.7;
+    color: #c8c8c8;
+}
+.header .headerContent .loginBox .loginContent a:hover{
+    color: #ffffff;
+}
+.header .headerContent .loginBox .loginContent em{
+    width: 0;
+    height: 16px;
+    border-left: 1px solid #303947;
+    margin: 0 23px;
+}
+.header .headerContent .phone{
+    float: right;
+    position: relative;
+    padding: 0 18px;
+}
+.header .headerContent .phone a{
+    line-height: 60px;
+    display: inline-block;
+    height: 60px;
+    color: #ffffff;
+}
+.header .headerContent .phone em{
+    display: inline-block;
+    top: 50%;
+    margin-top: 16px;
+    background: url("../images/head.png") -54px -45px no-repeat;
+    width: 17px;
+    height: 26px;
+    opacity: .7;
+    margin-right: 5px;
+}
+.header .headerContent .phone a:hover em,.header .headerContent .phone a:hover b{
+    opacity: 1;
+}
+.header .headerContent .phone b{
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: 10px;
+    background: url("../images/head.png") -140px 0 no-repeat;
+    width: 7px;
+    height: 4px;
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 50%;*/
+    /*margin-top: -2px;*/
+    opacity: .7;
+}
+.header .headerContent .found{
+    float: right;
+    position: relative;
+    padding: 0 18px;
+}
+.header .headerContent .found a{
+    line-height: 60px;
+    display: inline-block;
+    height: 60px;
+    color: #ffffff;
+}
+.header .headerContent .found em{
+    display: inline-block;
+    margin-top: 20px;
+    background: url("../images/head.png") -75px -45px no-repeat;
+    width: 20px;
+    height: 20px;
+    opacity: .7;
+}
+.header .headerContent .found a:hover em{
+    opacity: 1;
+}
+
+
+/*center start*/
+.center{
+    background: #fff;
+    width: 1000px;
+    margin: 100px auto 45px;
+    border-radius: 6px;
+    position: relative;
+    padding-bottom: 30px;
+    min-height: 600px;
+}
+
+.centerLine{
+    background: url("../images/reg24.png") no-repeat 0 0;
+    width: 1px;
+    height: 482px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+}
+.centerContent{
+    padding: 30px 65px;
+}
+.contentLeft{
+    float: left;
+    display: inline;
+    width: 380px;
+}
+.contentLeft h5{
+    font-size: 30px;
+    line-height: 1em;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contentLeft .zcList{
+
+}
+.contentLeft .zcList li{
+    width: 50%;
+    float: left;
+    display: inline;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    line-height: 2em;
+    font-weight: bold;
+    border-bottom: 2px solid #e5e5e5;
+    cursor: pointer;
+}
+.contentLeft .zcList li.select{
+    color: #1689df;
+    border-bottom-color: #1689df;
+}
+.contentLeft .inputList li .input{
+    position: relative;
+    border: 1px solid #aaa;
+    zoom: 1;
+    height: 49px;
+    width: 375px;
+    margin-top: 23px;
+    border-radius: 4px;
+    vertical-align: baseline;
+    display: inline-block;
+    z-index: 2;
+}
+.contentLeft .inputList li .input input{
+    height: 21px;
+    border: 0;
+    margin: 14px;
+    line-height: 21px;
+    font-family: helvetica, Î¢ÈíÑÅºÚ, "microsoft yahei", verdana, lucida, arial, sans-serif, ºÚÌå;
+    font-size: 14px;
+    width: 345px;
+    color: #a5a5a5;
+}
+/*.contentLeft .inputList li div input:focus{*/
+    /*box-shadow: 3px 3px 10px 0 rgba(0,0,0,.5);*/
+/*}*/
+.contentLeft .inputList li .ts{
+    display: none;
+    background: #ffebec;
+    width: 345px;
+    position: absolute;
+    left: -1px;
+    top: 50px;
+    border: 1px solid #e88a9b;
+    border-top: 0;
+    color: #d84459;
+    line-height: 22px;
+    border-radius: 0 0 3px 3px;
+    padding: 0 15px;
+}
+.contentLeft .inputList li .input .pass{
+    color: #949494;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    font-size: 12px;
+}
+.contentLeft .inputList li .input .pass p i{
+    background: #c5c5c5;
+    overflow: hidden;
+    display: inline-block;
+    width: 14px;
+    height: 4px;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+.contentLeft .inputList li .input a.btn{
+    background: #f6f6f6;
+    height: 34px;
+    border: 1px solid #b6b6b6;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    line-height: 34px;
+    padding: 0 15px;
+    color: #333;
+    border-radius: 3px;
+}
+.contentLeft .inputList li .input a.btn:hover{
+    background: #f0f0f0;
+}
+
+.contentLeft .inputList li .sex{
+    position: relative;
+    zoom: 1;
+    font-size: 14px;
+    padding-top: 25px;
+    color: #a5a5a5;
+}
+.contentLeft .inputList li .sex span{
+
+    padding-right: 15px;
+    font-size: 14px;
+}
+.contentLeft .inputList li .sex span i{
+    background: url("../images/reg24.png") no-repeat -30px -231px;
+    width: 20px;
+    height: 17px;
+    position: relative;
+    zoom: 1;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.contentLeft .inputList li .sex span .sex0,.contentLeft .inputList li .sex span .sex1{
+    background: url("../images/reg24.png") no-repeat -5px -210px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-left: 6px;
+    opacity: .5;
+}
+.contentLeft .inputList li .sex span .sex1{
+    background-position: -21px -210px;
+}
+
+.contentLeft .inputList li .bind{
+    padding-top: 20px;
+    font-size: 14px;
+}
+.contentLeft .inputList li .bind span{
+    /*background-position: -2px 0;*/
+    background: url("../images/reg24.png") no-repeat -2px -24px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.contentLeft .inputList li .bind span.on{
+    background-position: -2px 0;
+}
+.contentLeft .inputList li .bind a{
+    color: #0085e5;
+    line-height: 24px;
+}
+.contentLeft .inputList li .bind a:hover{
+    text-decoration: underline;
+}
+
+.contentLeft .allBtn{
+    padding-top: 35px;
+    text-align: center;
+}
+.contentLeft .allBtn a{
+    background: #0081bc;
+    width: 257px;
+    height: 53px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 53px;
+    border-radius: 27px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.contentRight{
+    float: right;
+    display: inline;
+    width: 380px;
+}
+.contentRight .logText{
+   margin-top: 6px;
+    font-size: 16px;
+}
+.mr8{
+    margin-top: 8px;
+}
+.a2{
+    float: right;
+}
+.contentRight .log3{
+    padding-top: 35px;
+    text-align: center;
+}
+.contentRight .log3 p{
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+.contentRight .log3 div{
+    margin: 25px auto;
+}
+.contentRight .log3 div a{
+    width: 52px;
+    height: 50px;
+    background: url("../images/reg24.png") no-repeat 0 0;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    margin: 0 10px;
+}
+.contentRight .log3 div a.sina {
+    background-position: -2px -48px;
+}
+.contentRight .log3 div a.qq{
+    background-position: -2px -98px;
+}
+
+.footLine{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right,#d2ab1a 0,#337fab 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
