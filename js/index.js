@@ -13,14 +13,14 @@
 }();
 
 
-// 首先获取所有的图片集合
-var allImg = document.getElementsByTagName("img");
-for(var i=0;i<allImg.length;i++){
-    DOM.setCss(allImg[i],"opacity","0");
-    DOM.setCss(allImg[i],"background","./images/loading.jpg")
-}
+
 //图片延迟加载
 ~function(){
+    // 首先获取所有的图片集合
+    var allImg = document.getElementsByTagName("img");
+    for(var i=0;i<allImg.length;i++){
+        DOM.setCss(allImg[i],"opacity","0");
+    }
     //图片延迟加载 首先实现单张图片延迟加载
     function imgDelayLoad(curImg){//这个函数要被调用jsonData.length次
         if(curImg.isLoad){
