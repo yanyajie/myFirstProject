@@ -3,6 +3,20 @@
 var DOM = (function () { //这个作用域不销毁
     var flag = "getComputedStyle" in window;
     return {
+        /**
+         *  获取浏览器窗口
+         * @param attr 读取
+         * @param val   赋值(设置值)
+         * @returns {number}
+         */
+        getWin: function (attr, val) {//获取可视窗口的高度
+            if (val != undefined) {
+                document.documentElement[attr] = val;
+                document.body[attr] = val;
+            }
+            return document.documentElement[attr] || document.body[attr];
+        },
+
         listToArray: function (likeArray) {
             var arr = [];
             try {
