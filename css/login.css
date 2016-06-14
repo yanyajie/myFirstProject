@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     -webkit-user-select: none;
+    color: #333333;
 }
 body{
     font-family: helvetica, 微软雅黑, "microsoft yahei", verdana, lucida, arial, sans-serif, 黑体;
@@ -18,11 +19,11 @@ img,input{
     /*点击后 input出现的边框*/
     vertical-align: middle;/*垂直居中*/
 }
-.clear{
-    clear: both;
+.clear:after {
+    display: block;
     height: 0;
-    line-height: 0;
-    font-size: 0;
+    content: "";
+    clear: both;
 }
 a{
     text-decoration: none;
@@ -275,7 +276,6 @@ a:hover{
     font-family: helvetica, 微软雅黑, "microsoft yahei", verdana, lucida, arial, sans-serif, 黑体;
     font-size: 14px;
     width: 345px;
-    color: #a5a5a5;
 }
 /*.contentLeft .inputList li div input:focus{*/
     /*box-shadow: 3px 3px 10px 0 rgba(0,0,0,.5);*/
@@ -423,6 +423,9 @@ a:hover{
    margin-top: 6px;
     font-size: 16px;
 }
+
+
+
 .mr8{
     margin-top: 8px;
 }
@@ -458,11 +461,6 @@ a:hover{
     background-position: -2px -98px;
 }
 
-.footLine{
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(to right,#d2ab1a 0,#337fab 100%);
-}
 
 
 

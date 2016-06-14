@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <title>时光网:让电影遇见生活</title>
     <link rel="stylesheet" href="css/index.css" type="text/css"/>
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="css/public.css" type="text/css"/>
 </head>
 <body>
 <div id="header" class="header min1100">
@@ -22,8 +20,9 @@
     <div id="footLine" class="footLine"></div>
 </div>
 <div id="subject" class="subject">
-    <div id="listBtn" class="listBtn w1000">
-        <ul class="listBtn_left">
+    <div class="nav">
+        <div id="listBtn" class="listBtn w1000">
+        <ul id="listBtnLeft" class="listBtn_left">
             <li class="on"><a href="">首页</a></li>
             <li><a href="">新闻</a></li>
             <li><a href="">影院</a></li>
@@ -32,185 +31,226 @@
             <li><a href="">发现</a></li>
         </ul>
         <ul class="listBtn_right">
-            <li><a href=""><span>我在:北京</span><i></i></a></li>
-            <li><a href="./login.html"><span>请登录</span><i></i></a></li>
+            <li><a class="in" href=""><span>我在：北京</span><i></i></a></li>
+            <li><a class="log" href="./login.html" target="_blank"><span>请登录</span><i></i></a></li>
             <li><a href=""><i></i></a></li>
         </ul>
     </div>
-    <div class="clear"></div>
-    <div class="subject1_bg">
-        <div class="subject1_bg1"></div>
     </div>
-    <div id="subject1" class="subject1 w1000">
-        <div id="banner" class="banner">
-            <div id="inner" class="inner">
-                <div><img src="images/182813.72627575.jpg" alt=""/></div>
-                <!--<div><img src="images/145934.78773462.jpg" alt=""/></div>-->
-                <!--<div><img src="images/081605.15785697.jpg" alt=""/></div>-->
-                <!--<div><img src="images/143325.22608681.jpg" alt=""/></div>-->
-
+    <!--<div class="clear"></div>-->
+    <!-- subject1 start -->
+    <div id="subject1" class="subject1 clear">
+        <ul id="subject1_bg" class="subject1_bg">
+            <li class="bg1"></li>
+            <li class="bg2"></li>
+            <li class="bg3"></li>
+            <li class="bg4"></li>
+            <li class="bg5"></li>
+        </ul>
+        <div id="banner1" class="banner">
+            <div id="inner1" class="inner">
+                <ul id="innerList" class="innerList">
+                    <li class="on">
+                        <a href=""><img src="images/1.jpg" alt=""/></a>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/2.jpg" alt=""/></a>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/3.jpg" alt=""/></a>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/4.jpg" alt=""/></a>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/5.jpg" alt=""/></a>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <ul id="btnList" class="btnList">
+            <ul id="btnUl1" class="btnList">
                 <li class="select"></li>
+                <li></li>
+                <li></li>
+                <li></li>
                 <li></li>
             </ul>
             <a id="more" class="more" href="javascript:void 0;">更多</a>
         </div>
-        <a id="leftBtn" class="leftBtn" href="javascript:void 0;"></a>
-        <a id="rightBtn" class="rightBtn" href="javascript:void 0;"></a>
-        <div id="content" class="content">
-            <div class="contentInner">
-                <div id="newsLeft" class="newsLeft">
-                    <h4>今日<span>快讯</span></h4>
-                    <ul>
-                        <li>
-                            <p class="newsLeft_time">2小时前</p>
-                            <dl>
-                                <dt><a href="#"><img src="images/200933.31991510_86X86X4.jpg" alt=""/></a></dt>
-                                <dd>
-                                    <a class="dd_a" href="#">《咖啡公社》剧组亮相戛纳</a>
-                                    <p class="dd_p">伍迪艾伦老爷子携《咖啡公社》主演亮相戛纳电影节。</p>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <p class="newsLeft_time">2小时前</p>
-                            <dl>
-                                <dt><a href="#"><img src="images/200933.31991510_86X86X4.jpg" alt=""/></a></dt>
-                                <dd>
-                                    <a class="dd_a" href="#">《咖啡公社》剧组亮相戛纳</a>
-                                    <p class="dd_p">伍迪艾伦老爷子携《咖啡公社》主演亮相戛纳电影节。</p>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <p class="newsLeft_time">2小时前</p>
-                            <dl>
-                                <dt><a href="#"><img src="images/200933.31991510_86X86X4.jpg" alt=""/></a></dt>
-                                <dd>
-                                    <a class="dd_a" href="#">《咖啡公社》剧组亮相戛纳</a>
-                                    <p class="dd_p">伍迪艾伦老爷子携《咖啡公社》主演亮相戛纳电影节。</p>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <p class="newsLeft_time">2小时前</p>
-                            <dl>
-                                <dt><a href="#"><img src="images/200933.31991510_86X86X4.jpg" alt=""/></a></dt>
-                                <dd>
-                                    <a class="dd_a" href="#">《咖啡公社》剧组亮相戛纳</a>
-                                    <p class="dd_p">伍迪艾伦老爷子携《咖啡公社》主演亮相戛纳电影节。</p>
-                                </dd>
-                            </dl>
-                        </li>
-                    </ul>
-                    <a class="newsLeft_more" href="">更多<span></span></a>
+        <a id="leftBtn1" class="leftBtn" href="javascript:void 0;"></a>
+        <a id="rightBtn1" class="rightBtn" href="javascript:void 0;"></a>
+    </div>
+    <div id="content" class="content clear">
+        <div class="contentInner">
+            <div id="newsLeft" class="newsLeft">
+                <h4>今日<span>快讯</span></h4>
+                <ul>
+                    <li>
+                        <p class="newsLeft_time">2小时前</p>
+                        <dl>
+                            <dt><a href="#"><img src="images/200933.31991510_86X86X4.jpg" alt=""/></a></dt>
+                            <dd>
+                                <a class="dd_a" href="#">《咖啡公社》剧组亮相戛纳</a>
+                                <p class="dd_p">伍迪艾伦老爷子携《咖啡公社》主演亮相戛纳电影节。</p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p class="newsLeft_time">2小时前</p>
+                        <dl>
+                            <dt><a href="#"><img src="images/200933.31991510_86X86X4.jpg" alt=""/></a></dt>
+                            <dd>
+                                <a class="dd_a" href="#">《咖啡公社》剧组亮相戛纳</a>
+                                <p class="dd_p">伍迪艾伦老爷子携《咖啡公社》主演亮相戛纳电影节。</p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p class="newsLeft_time">2小时前</p>
+                        <dl>
+                            <dt><a href="#"><img src="images/200933.31991510_86X86X4.jpg" alt=""/></a></dt>
+                            <dd>
+                                <a class="dd_a" href="#">《咖啡公社》剧组亮相戛纳</a>
+                                <p class="dd_p">伍迪艾伦老爷子携《咖啡公社》主演亮相戛纳电影节。</p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p class="newsLeft_time">2小时前</p>
+                        <dl>
+                            <dt><a href="#"><img src="images/200933.31991510_86X86X4.jpg" alt=""/></a></dt>
+                            <dd>
+                                <a class="dd_a" href="#">《咖啡公社》剧组亮相戛纳</a>
+                                <p class="dd_p">伍迪艾伦老爷子携《咖啡公社》主演亮相戛纳电影节。</p>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+                <a class="newsLeft_more" href="">更多<span></span></a>
+            </div>
+            <div id="newsCont">
+                <dl>
+                    <dt class="newsCont_dt">
+                        <a href=""><img src="images/211941.72702848.jpg" alt=""/></a>
+                    <h3>
+                        <a href="">专访"X战警天启"詹姆斯麦卡沃伊<br><span>"这一次的角色更有安全感和幸福感"</span></a>
+                    </h3>
+                    </dt>
+                    <dd class="newsCont_dd">
+                        <a href=""><img src="images/170726.85081083.jpg" alt=""/></a>
+                        <h3>
+                            <a href="">"爱丽丝梦游仙境2"欧洲首映<br>德普携手米娅现身"蓝毯"</a>
+                        </h3>
+                    </dd>
+                    <dd class="newsCont_dd">
+                        <a href=""><img src="images/170726.85081083.jpg" alt=""/></a>
+                        <h3>
+                            <a href="">"爱丽丝梦游仙境2"欧洲首映<br>德普携手米娅现身"蓝毯"</a>
+                        </h3>
+                    </dd>
+                </dl>
+            </div>
+            <div id="newsRight" class="newsRight">
+                <div id="newsRight_head" class="newsRight_head">
+                    <h4>产业<span>聚焦</span><br>FOCUS</h4>
+                    <em></em>
                 </div>
-                <div id="newsCont">
-                    <dl>
-                        <dt class="newsCont_dt">
-                            <a href=""><img src="images/211941.72702848.jpg" alt=""/></a>
-                            <h3>
-                                <a href="">专访"X战警天启"詹姆斯麦卡沃伊<br><span>"这一次的角色更有安全感和幸福感"</span></a>
-                            </h3>
-                        </dt>
-                        <dd class="newsCont_dd">
-                            <a href=""><img src="images/170726.85081083.jpg" alt=""/></a>
-                            <h3>
-                                <a href="">"爱丽丝梦游仙境2"欧洲首映<br>德普携手米娅现身"蓝毯"</a>
-                            </h3>
-                        </dd>
-                        <dd class="newsCont_dd">
-                            <a href=""><img src="images/170726.85081083.jpg" alt=""/></a>
-                            <h3>
-                                <a href="">"爱丽丝梦游仙境2"欧洲首映<br>德普携手米娅现身"蓝毯"</a>
-                            </h3>
-                        </dd>
-                    </dl>
-                </div>
-                <div id="newsRight" class="newsRight">
-                    <div id="newsRight_head" class="newsRight_head">
-                        <h4>产业<span>聚焦</span><br>FOCUS</h4>
-                        <em></em>
-                    </div>
-                    <ul class="newsRight_list">
-                        <li><a href="">虚拟现实峰会深圳召开<br>大咖畅聊VR影视潜力</a></li>
-                        <li><a href="">虚拟现实峰会深圳召开<br>大咖畅聊VR影视潜力</a></li>
-                        <li><a href="">虚拟现实峰会深圳召开<br>大咖畅聊VR影视潜力</a></li>
-                        <li><a href="">虚拟现实峰会深圳召开<br>大咖畅聊VR影视潜力</a></li>
-                        <li class="newsRight_list_last"><a href="">虚拟现实峰会深圳召开<br>大咖畅聊VR影视潜力</a></li>
-                    </ul>
-                    <a class="newsRight_more" href="">更多<span></span></a>
-                </div>
+                <ul class="newsRight_list">
+                    <li><a href="">虚拟现实峰会深圳召开<br>大咖畅聊VR影视潜力</a></li>
+                    <li><a href="">虚拟现实峰会深圳召开<br>大咖畅聊VR影视潜力</a></li>
+                    <li><a href="">虚拟现实峰会深圳召开<br>大咖畅聊VR影视潜力</a></li>
+                    <li><a href="">虚拟现实峰会深圳召开<br>大咖畅聊VR影视潜力</a></li>
+                    <li class="newsRight_list_last"><a href="">虚拟现实峰会深圳召开<br>大咖畅聊VR影视潜力</a></li>
+                </ul>
+                <a class="newsRight_more" href="">更多<span></span></a>
             </div>
         </div>
     </div>
-    <div class="clear fun w1000">
-        <div class="fun_banner">
-            <ul class="fun_inner">
+    <!-- fun start -->
+    <div id="fun" class="clear fun w1000">
+        <div id="funBanner" class="fun_banner">
+            <ul id="funInner" class="fun_inner">
                 <li>
+                    <a href=""><img src="images/110947.27969904.jpg" alt=""/></a>
                     <div>
                         <h3>死侍雕像亮相街头</h3>
                         <h4>躺卧姿势异常撩人 </h4>
                     </div>
-                    <a href=""><img src="images/110947.27969904.jpg" alt=""/></a>
                 </li>
                 <li>
+                    <a href=""><img src="images/145652.88849624.jpg" alt=""/></a>
                     <div>
                         <h3>钢铁侠出艺术人偶</h3>
                         <h4>宽大双臂独特造型 </h4>
                     </div>
-                    <a href=""><img src="images/145652.88849624.jpg" alt=""/></a>
                 </li>
                 <li>
+                    <a href=""><img src="images/172440.30028882.jpg" alt=""/></a>
                     <div>
                         <h3>恶搞"美队3"英雄</h3>
                         <h4>钢铁侠揩油 小李躺枪 </h4>
                     </div>
-                    <a href=""><img src="images/172440.30028882.jpg" alt=""/></a>
                 </li>
                 <li>
+                    <a href=""><img src="images/163019.49029679.jpg" alt=""/></a>
                     <div>
                         <h3>母亲节众星晒祝福</h3>
                         <h4>"龙妈"也要过节 </h4>
                     </div>
-                    <a href=""><img src="images/163019.49029679.jpg" alt=""/></a>
                 </li>
                 <li>
-                    <div>
-                        <h3>死侍雕像亮相街头</h3>
-                        <h4>躺卧姿势异常撩人 </h4>
-                    </div>
                     <a href=""><img src="images/145823.39242300.jpg" alt=""/></a>
-                </li>
-                <li>
                     <div>
                         <h3>死侍雕像亮相街头</h3>
                         <h4>躺卧姿势异常撩人 </h4>
                     </div>
+                </li>
+                <li>
                     <a href=""><img src="images/172440.30028882.jpg" alt=""/></a>
-                </li>
-                <li>
                     <div>
                         <h3>死侍雕像亮相街头</h3>
                         <h4>躺卧姿势异常撩人 </h4>
                     </div>
-                    <a href=""><img src="images/110947.27969904.jpg" alt=""/></a>
                 </li>
                 <li>
+                    <a href=""><img src="images/110947.27969904.jpg" alt=""/></a>
                     <div>
                         <h3>死侍雕像亮相街头</h3>
                         <h4>躺卧姿势异常撩人 </h4>
                     </div>
+                </li>
+                <li>
                     <a href=""><img src="images/110947.27969904.jpg" alt=""/></a>
+                    <div>
+                        <h3>死侍雕像亮相街头</h3>
+                        <h4>躺卧姿势异常撩人 </h4>
+                    </div>
+                </li>
+                <li>
+                    <a href="">更多<i></i></a>
                 </li>
             </ul>
         </div>
-        <i class="fun_left_i"></i>
-        <i class="fun_right_i"></i>
-        <a class="fun_left" href=""></a>
-        <a class="fun_right" href=""></a>
+        <i id="funLeftI" class="fun_left_i"></i>
+        <i id="funRightI" class="fun_right_i"></i>
+        <a id="funLeft" class="fun_left" href="javascript:;"></a>
+        <a id="funRight" class="fun_right" href="javascript:;"></a>
     </div>
+    <!-- contentNav start -->
     <div class="contentListBtn">
         <div class="w960">
             <span>推荐：</span>
@@ -222,27 +262,40 @@
             <a class="w960_more" href=""><i></i>进入新闻频道</a>
         </div>
     </div>
-
-
-    <div class="subject2_bg">
-        <div class="subject1_bg1"></div>
-    </div>
-    <div class="subject2 subject1 w1000">
-        <div class="banner">
-            <div class="inner">
-                <!--<div><img src="images/182813.72627575.jpg" alt=""/></div>-->
-                <div><img src="images/145934.78773462.jpg" alt=""/></div>
-                <!--<div><img src="images/081605.15785697.jpg" alt=""/></div>-->
+    <!-- subject2 start -->
+    <div id="subject2" class="subject1 clear">
+        <ul id="subject2_bg" class="subject1_bg subject2_bg">
+            <li class="bg1"></li>
+            <li class="bg2"></li>
+        </ul>
+        <div id="banner2" class="banner">
+            <div id="inner2" class="inner">
+                <ul class="innerList">
+                    <li class="on">
+                        <a href=""><img src="images/21.jpg" alt=""/></a>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/22.jpg" alt=""/></a>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <ul class="btnList">
+            <ul id="btnUl2" class="btnList">
                 <li class="select"></li>
                 <li></li>
             </ul>
         </div>
-        <a class="leftBtn" href="javascript:void 0;"></a>
-        <a class="rightBtn" href="javascript:void 0;"></a>
-        <div class="content">
-            <div class="MovieContentInner">
+        <a id="leftBtn2" class="leftBtn" href="javascript:void 0;"></a>
+        <a id="rightBtn2" class="rightBtn" href="javascript:void 0;"></a>
+    </div>
+    <div class="content">
+        <ul id="MovieContent" class="MovieContent">
+            <li class="MovieContentInner li1">
                 <div class="MovieContentInner_left">
                     <div class="left_img">
                         <a href=""><img src="images/113933.51191278_186X279X4.jpg" alt=""/><i></i></a>
@@ -301,17 +354,78 @@
                         <p><a href="">选座购票</a></p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </li>
+            <li class="MovieContentInner">
+                <div class="MovieContentInner_left">
+                    <div class="left_img">
+                        <a href=""><img src="images/145339.78059808_186X279X4.jpg" alt=""/><i></i></a>
+                    </div>
+                    <div class="left_content">
+                        <div class="left_content_pf">
+                            <p>总评分</p>
+                            <strong>6.6</strong>
+                        </div>
+                        <div class="left_content_bt">
+                            <h3><a href="">判我有罪</a></h3>
+                            <p>5月6日上映</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="MovieContentInner_right">
+                    <div class="right_up">
+                        <div class="right_up_bt">
+                            <i></i>
+                            <p>叩问人性的自我救赎</p>
+                        </div>
+                        <p class="right_up_dy">
+                            导演：
+                            <a class="mr35" href="">孙亮</a>
+                            主演：
+                            <a class="mr12" href="">吴镇宇</a>
+                            <a class="mr12" href="">李昕芸</a>
+                        </p>
+                    </div>
+                    <div class="right_down">
+                        <div class="right_down1">
+                            <a class="rd1" href="">大地十里河铭泽店</a>
+                            <ul>
+                                <li><a href="">22:30&nbsp&nbsp34元</a></li>
+                                <li><a href="">22:30&nbsp&nbsp34元</a></li>
+                                <li><a href="">22:30&nbsp&nbsp34元</a></li>
+                            </ul>
+                            <a class="end" href="">>></a>
+                        </div>
+                        <div class="right_down1">
+                            <a class="rd1" href="">北京嘉华国际影城</a>
+                            <ul>
+                                <li><a href="">22:30&nbsp&nbsp34元</a></li>
+                                <li><a href="">22:30&nbsp&nbsp34元</a></li>
+                                <li><a href="">22:30&nbsp&nbsp34元</a></li>
+                            </ul>
+                            <a class="end" href="">>></a>
+                        </div>
+                        <p><a href="">北京136家影院上映1783场 >></a></p>
+                    </div>
+                    <div class="right_right">
+                        <div class="r1">
+                            <strong>28</strong>
+                            元起
+                        </div>
+                        <p><a href="">选座购票</a></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
 
+    </div>
+    <!-- subject3 start -->
     <div class="subject3">
         <div class="subject3_1">
             <h4>正在热映&nbsp<span>51</span>部<a href="">更多<i></i></a></h4>
         </div>
-        <div class="subject3_2">
+        <div class="subject3_2 clear">
             <div class="subject3_2_left">
-                <i class="border">▲</i>
+                <i class="border"></i>
                 <div class="changeCity">
                     <i class="i1"></i>北京<i class="i2"></i>
                 </div>
@@ -330,11 +444,12 @@
             </div>
             <div class="subject3_2_right">
                 <div class="subject3_2_rightInner">
-                    <a class="rightInnerBtn rightInner_left" href=""></a>
-                    <a class="rightInnerBtn rightInner_right" href=""></a>
-                    <span class="rightInner_shadow"></span>
-                    <div class="rightInner_content">
-                        <ul>
+                    <a id="s3LeftBtn" class="rightInnerBtn rightInner_left" href="javascript:;"></a>
+                    <a id="s3RightBtn" class="rightInnerBtn rightInner_right" href="javascript:;"></a>
+                    <span id="s3RightI" class="rightInner_shadowR"></span>
+                    <span id="s3LeftI" class="rightInner_shadowL"></span>
+                    <div id="s3Banner" class="rightInner_content">
+                        <ul id="s3Inner" class="clear">
                             <li>
                                 <a class="a1" href=""><img src="./images/095659.60254748_140X210X4.jpg" alt=""/><em>5.0</em></a>
                                 <h3><a href="">梦想合伙人</a></h3>
@@ -412,16 +527,17 @@
                 </div>
             </div>
         </div>
-        <div class="clear"></div>
+        <!--<div class="clear"></div>-->
         <div class="subject3_1 margin">
             <h4>即将上映&nbsp<span>63</span>部<a href="">更多<i></i></a></h4>
         </div>
         <div class="subject3_3">
-            <a class="leftBtn" href=""></a>
-            <a class="rightBtn" href=""></a>
-            <span class="subject3_3_shadow"></span>
-            <div class="subject3_3_content">
-                <ul class="3_contentList">
+            <a id="s3_3LeftBtn" class="leftBtn" href="javascript:;"></a>
+            <a id="s3_3RightBtn" class="rightBtn" href="javascript:;"></a>
+            <span id="s3_3LeftI" class="subject3_3_shadowL"></span>
+            <span id="s3_3RightI" class="subject3_3_shadowR"></span>
+            <div id="s3_3Banner" class="subject3_3_content">
+                <ul id="s3_3Inner" class="3_contentList clear">
                     <li>
                         <p class="head_p1"><i>&nbsp</i></p>
                         <p class="head_p2"><strong>5月20日</strong>即将上映</p>
@@ -637,8 +753,7 @@
         </div>
     </div>
     <div class="clear line"></div>
-
-
+    <!-- contentNav start -->
     <div class="contentListBtn">
         <div class="w960">
             <span>推荐：</span>
@@ -650,98 +765,164 @@
             <a class="w960_more" href=""><i></i>进入影院频道</a>
         </div>
     </div>
-
-
-    <div class="subject4_bg">
-        <div class="subject1_bg1"></div>
-    </div>
-    <div class="subject4 subject1 w1000">
-        <div class="banner">
-            <div class="inner">
-                <!--<div><img src="images/182813.72627575.jpg" alt=""/></div>-->
-                <div><img src="images/145934.78773462.jpg" alt=""/></div>
-                <!--<div><img src="images/081605.15785697.jpg" alt=""/></div>-->
+    <!-- subject4 start -->
+    <div id="subject4" class="subject1 clear">
+        <ul id="subject4_bg" class="subject1_bg subject4_bg">
+            <li class="bg1"></li>
+            <li class="bg2"></li>
+            <li class="bg3"></li>
+            <li class="bg4"></li>
+            <li class="bg5"></li>
+        </ul>
+        <div id="banner4" class="banner">
+            <div id="inner4" class="inner">
+                <ul class="innerList innerList4">
+                    <li class="on">
+                        <a href=""></a>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
+                        </div>
+                    </li>
+                    <li >
+                        <a href=""></a>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
+                        </div>
+                    </li>
+                    <li >
+                        <a href=""></a>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <ul class="btnList">
+            <ul id="btnUl4" class="btnList">
                 <li class="select"></li>
+                <li></li>
+                <li></li>
+                <li></li>
                 <li></li>
             </ul>
         </div>
-        <a class="leftBtn" href="javascript:void 0;"></a>
-        <a class="rightBtn" href="javascript:void 0;"></a>
-        <div class="content">
-            <div class="bayCenter">
-                <div class="bayCenter_1">
-                    <div class="bayCenter_1left">
-                        <ul>
-                            <li>
-                                <h3><a href=""><img src="./images/084337.35875451.jpg" alt=""/>玩具模型</a></h3>
-                                <p><a href="">模型公仔</a><a href="">仿真收藏</a><a href="">更多></a></p>
-                            </li>
-                            <li>
-                                <h3><a href=""><img src="./images/153449.74471607.jpg" alt=""/>玩具模型</a></h3>
-                                <p><a href="">模型公仔</a><a href="">仿真收藏</a><a href="">更多></a></p>
-                            </li>
-                            <li>
-                                <h3><a href=""><img src="./images/160245.24941676.jpg" alt=""/>玩具模型</a></h3>
-                                <p><a href="">模型公仔</a><a href="">仿真收藏</a><a href="">更多></a></p>
-                            </li>
-                            <li>
-                                <h3><a href=""><img src="./images/161113.47457276.jpg" alt=""/>玩具模型</a></h3>
-                                <p><a href="">模型公仔</a><a href="">仿真收藏</a><a href="">更多></a></p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="bayCenter_1right">
-                        <div class="bayCenter_1rightUp">
-                            <a href=""><img src="./images/122806.70098325.jpg" alt=""/></a>
-                        </div>
-                        <div class="bayCenter_1rightUp">
-                            <a href=""><img src="./images/121629.45060199.jpg" alt=""/></a>
-                        </div>
-                        <div class="bayCenter_1rightDown">
-                            <a href=""><img src="./images/123038.48251561.jpg" alt=""/></a>
-                        </div>
-                        <div class="bayCenter_1rightDown">
-                            <a href=""><img src="./images/123051.20242331.jpg" alt=""/></a>
-                        </div>
-                        <div class="bayCenter_1rightDown">
-                            <a href=""><img src="./images/123101.47101736.jpg" alt=""/></a>
-                        </div>
-                        <div class="bayCenter_1rightDown">
-                            <a href=""><img src="./images/123116.75531998.jpg" alt=""/></a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <div class="bayCenter_2">
-                    <a class="bayCenter_2leftBtn" href=""></a>
-                    <a class="bayCenter_2rightBtn" href=""></a>
-                    <ul class="btnList">
-                        <li class="select"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <p class="bayCenter_2p">正版原创</p>
-                    <ul class="bayCenter_2content">
-                        <li class="li1">
-                            <ul class="ul1">
-                                <li><a href=""><img src="./images/1.png" alt=""/></a></li>
-                                <li><a href=""><img src="./images/1.png" alt=""/></a></li>
-                            </ul>
-                            <ul class="ul2">
-                                <li><a href=""><img src="./images/1.png" alt=""/></a></li>
-                                <li><a href=""><img src="./images/1.png" alt=""/></a></li>
-                            </ul>
+        <a id="leftBtn4" class="leftBtn" href="javascript:void 0;"></a>
+        <a id="rightBtn4" class="rightBtn" href="javascript:void 0;"></a>
+    </div>
+    <div class="content">
+        <div class="bayCenter">
+            <div class="bayCenter_1">
+                <div class="bayCenter_1left">
+                    <ul>
+                        <li>
+                            <h3><a href=""><img src="./images/084337.35875451.jpg" alt=""/>玩具模型</a></h3>
+                            <p><a href="">模型公仔</a><a href="">仿真收藏</a><a href="">更多></a></p>
+                        </li>
+                        <li>
+                            <h3><a href=""><img src="./images/153449.74471607.jpg" alt=""/>玩具模型</a></h3>
+                            <p><a href="">模型公仔</a><a href="">仿真收藏</a><a href="">更多></a></p>
+                        </li>
+                        <li>
+                            <h3><a href=""><img src="./images/160245.24941676.jpg" alt=""/>玩具模型</a></h3>
+                            <p><a href="">模型公仔</a><a href="">仿真收藏</a><a href="">更多></a></p>
+                        </li>
+                        <li>
+                            <h3><a href=""><img src="./images/161113.47457276.jpg" alt=""/>玩具模型</a></h3>
+                            <p><a href="">模型公仔</a><a href="">仿真收藏</a><a href="">更多></a></p>
                         </li>
                     </ul>
                 </div>
+                <div class="bayCenter_1right">
+                    <div class="bayCenter_1rightUp">
+                        <a href=""><img src="./images/122806.70098325.jpg" alt=""/></a>
+                    </div>
+                    <div class="bayCenter_1rightUp">
+                        <a href=""><img src="./images/121629.45060199.jpg" alt=""/></a>
+                    </div>
+                    <div class="bayCenter_1rightDown">
+                        <a href=""><img src="./images/123038.48251561.jpg" alt=""/></a>
+                    </div>
+                    <div class="bayCenter_1rightDown">
+                        <a href=""><img src="./images/123051.20242331.jpg" alt=""/></a>
+                    </div>
+                    <div class="bayCenter_1rightDown">
+                        <a href=""><img src="./images/123101.47101736.jpg" alt=""/></a>
+                    </div>
+                    <div class="bayCenter_1rightDown">
+                        <a href=""><img src="./images/123116.75531998.jpg" alt=""/></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div id="bayBanner" class="bayCenter_2">
+                <a id="bayLeftBtn" class="bayCenter_2leftBtn" href="javascript:;"></a>
+                <a id="bayRightBtn" class="bayCenter_2rightBtn" href="javascript:;"></a>
+                <ul id="bayBtnUl" class="btnList">
+                    <li class="select"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <p class="bayCenter_2p">正版原创</p>
+                <ul id="bayInner" class="bayCenter_2content clear">
+                    <li class="li1">
+                        <dl class="ul1">
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                        </dl>
+                        <dl class="ul2">
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                        </dl>
+                    </li>
+                    <li class="li2">
+                        <dl class="ul1">
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                        </dl>
+                        <dl class="ul2">
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                        </dl>
+                    </li>
+                    <li class="li3">
+                        <dl class="ul1">
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                        </dl>
+                        <dl class="ul2">
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                        </dl>
+                    </li>
+                    <li class="li4">
+                        <dl class="ul1">
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                        </dl>
+                        <dl class="ul2">
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                            <dd><a href=""><img src="./images/1.png" alt=""/></a></dd>
+                        </dl>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 
+    <!-- contentNav start -->
     <div class="contentListBtn">
         <div class="w960">
             <span>推荐：</span>
@@ -753,251 +934,318 @@
         </div>
     </div>
 
-    <div class="subject5_bg">
-        <div class="subject1_bg1"></div>
-    </div>
-    <div class="subject5 subject1 w1000">
-        <div class="banner">
-            <div class="inner">
-                <!--<div><img src="images/182813.72627575.jpg" alt=""/></div>-->
-                <div>
-                    <img src="images/145934.78773462.jpg" alt=""/>
-                    <div class="comment">
-                        <div class="comment1">
-                            <a class="comment1_a1" href=""><img src="./images/103047.44809382_128X128.jpg" alt=""/></a>
-                            <h3><a href="">满血复活，不夺凛冬终不还！</a></h3>
-                            <p class="comment1_p1"><span></span>随着琼雪在“背弃宣誓者”最后作出选择，往最终大战迈进，那是我们等待已久的一场大战。而虽说不是所有人的故事都那么有趣，但北方和临君城发生的事很值得我们看下去。</p>
-                            <p class="comment1_p2"><a href="">逍遥侠客121</a><i>评</i>《<a href="">权力的游戏</a>》<strong>9.0</strong></p>
-                            <a class="comment1_a2" href=""><img src="./images/104658.59897695_75X100.jpg" alt=""/></a>
-                        </div>
-                        <div class="comment2">
-                            <div class="comment2_p">
-                                <a href=""><img src="./images/174842.12794142_48X48.jpg" alt=""/></a>
-                                <p><a href="">逗比的人生</a>&nbsp说:</p>
-                                <p>雪诺是大难复活，必有崛起之路！</p>
+    <div id="subject5" class="subject1 subject5 clear">
+        <ul id="subject5_bg" class="subject1_bg subject5_bg">
+            <li class="bg1"></li>
+            <li class="bg2"></li>
+            <li class="bg3"></li>
+        </ul>
+        <div id="banner5" class="banner">
+            <div id="inner5"  class="inner">
+                <ul class="innerList innerList5">
+                    <li class="on">
+                        <a href=""></a>
+                        <div class="comment">
+                            <div class="comment1">
+                                <a class="comment1_a1" href=""><img src="./images/103047.44809382_128X128.jpg" alt=""/></a>
+                                <h3><a href="">满血复活，不夺凛冬终不还！</a></h3>
+                                <p class="comment1_p1"><span></span>随着琼雪在“背弃宣誓者”最后作出选择，往最终大战迈进，那是我们等待已久的一场大战。而虽说不是所有人的故事都那么有趣，但北方和临君城发生的事很值得我们看下去。</p>
+                                <p class="comment1_p2"><a href="">逍遥侠客121</a><i>评</i>《<a href="">权力的游戏</a>》<strong>9.0</strong></p>
+                                <a class="comment1_a2" href=""><img src="./images/104658.59897695_75X100.jpg" alt=""/></a>
                             </div>
-                            <div class="comment2_p">
-                                <a href=""><img src="./images/174842.12794142_48X48.jpg" alt=""/></a>
-                                <p><a href="">逗比的人生</a>&nbsp说:</p>
-                                <p>雪诺是大难复活，必有崛起之路！</p>
-                            </div>
-                            <div class="comment2_input">
-                                <input type="text" placeholder="发表评论"/>
-                                <i></i>
+                            <div class="comment2">
+                                <div class="comment2_p">
+                                    <a href=""><img src="./images/174842.12794142_48X48.jpg" alt=""/></a>
+                                    <p><a href="">逗比的人生</a>&nbsp说:</p>
+                                    <p>雪诺是大难复活，必有崛起之路！</p>
+                                </div>
+                                <div class="comment2_p">
+                                    <a href=""><img src="./images/174842.12794142_48X48.jpg" alt=""/></a>
+                                    <p><a href="">逗比的人生</a>&nbsp说:</p>
+                                    <p>雪诺是大难复活，必有崛起之路！</p>
+                                </div>
+                                <div class="comment2_input">
+                                    <input type="text" placeholder="发表评论"/>
+                                    <i></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--<div><img src="images/081605.15785697.jpg" alt=""/></div>-->
-            </div>
-            <ul class="btnList">
-                <li class="select"></li>
-                <li></li>
-            </ul>
-        </div>
-        <a class="leftBtn" href="javascript:void 0;"></a>
-        <a class="rightBtn" href="javascript:void 0;"></a>
-        <div class="content">
-            <div class="commentContent">
-                <ul class="commentContent_ul">
-                    <li>
-                        <div class="ul_div1">
-                            <ul>
-                                <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
-                                <li class="userLi">
-                                    <div>
-                                        <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
-                                        <p><a href="">方格小城</a></p>
-                                        <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
-                                    </div>
-                                </li>
-                                <li class="textLi">
-                                    <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
-                                    <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
-                                </li>
-                                <li class="replayLi">
-                                    <div>
-                                        <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
-                                        <p><a href="">简芗竹</a>：</p>
-                                        <p>当年曾经好爱这电影~</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="ul_div1">
-                            <ul>
-                                <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
-                                <li class="userLi">
-                                    <div>
-                                        <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
-                                        <p><a href="">方格小城</a></p>
-                                        <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
-                                    </div>
-                                </li>
-                                <li class="textLi">
-                                    <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
-                                    <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
-                                </li>
-                                <li class="replayLi">
-                                    <div>
-                                        <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
-                                        <p><a href="">简芗竹</a>：</p>
-                                        <p>当年曾经好爱这电影~</p>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
                         </div>
                     </li>
                     <li>
-                        <div class="ul_div1">
-                            <ul>
-                                <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
-                                <li class="userLi">
-                                    <div>
-                                        <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
-                                        <p><a href="">方格小城</a></p>
-                                        <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
-                                    </div>
-                                </li>
-                                <li class="textLi">
-                                    <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
-                                    <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
-                                </li>
-                                <li class="replayLi">
-                                    <div>
-                                        <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
-                                        <p><a href="">简芗竹</a>：</p>
-                                        <p>当年曾经好爱这电影~</p>
-                                    </div>
-                                </li>
-                            </ul>
+                        <a href=""></a>
+                        <div class="comment">
+                            <div class="comment1">
+                                <a class="comment1_a1" href=""><img src="./images/154445.54893745_128X128.jpg" alt=""/></a>
+                                <h3><a href="">美国队长信念的重建</a></h3>
+                                <p class="comment1_p1"><span></span>本片将每一位英雄的战斗特点充分地展现了出来，小蜘蛛的嘴炮和蚁人的新招式更是为激烈的战斗贡献了不少笑点。严格来说它确实称不上“史诗”，但绝对炫酷到了爆炸的程度。</p>
+                                <p class="comment1_p2"><a href="">汪佳琪的闲扯</a><i>评</i>《<a href="">美国队长3</a>》<strong>9.0</strong></p>
+                                <a class="comment1_a2" href=""><img src="./images/113933.51191278_75X100.jpg" alt=""/></a>
+                            </div>
+                            <div class="comment2">
+                                <div class="comment2_p">
+                                    <a href=""><img src="./images/152430.60862618_48X48.jpg" alt=""/></a>
+                                    <p><a href="">猫妖怪</a>&nbsp说:</p>
+                                    <p>看美队走向冬兵的时候，好心疼钢铁侠~</p>
+                                </div>
+                                <div class="comment2_p">
+                                    <a href=""><img src="./images/174842.12794142_48X48.jpg" alt=""/></a>
+                                    <p><a href="">逗比的人生</a>&nbsp说:</p>
+                                    <p>雪诺是大难复活，必有崛起之路！</p>
+                                </div>
+                                <div class="comment2_input">
+                                    <input type="text" placeholder="发表评论"/>
+                                    <i></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ul_div1">
-                            <ul>
-                                <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
-                                <li class="userLi">
-                                    <div>
-                                        <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
-                                        <p><a href="">方格小城</a></p>
-                                        <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
-                                    </div>
-                                </li>
-                                <li class="textLi">
-                                    <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
-                                    <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
-                                </li>
-                                <li class="replayLi">
-                                    <div>
-                                        <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
-                                        <p><a href="">简芗竹</a>：</p>
-                                        <p>当年曾经好爱这电影~</p>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
                         </div>
                     </li>
                     <li>
-                        <div class="ul_div1">
-                            <ul>
-                                <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
-                                <li class="userLi">
-                                    <div>
-                                        <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
-                                        <p><a href="">方格小城</a></p>
-                                        <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
-                                    </div>
-                                </li>
-                                <li class="textLi">
-                                    <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
-                                    <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
-                                </li>
-                                <li class="replayLi">
-                                    <div>
-                                        <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
-                                        <p><a href="">简芗竹</a>：</p>
-                                        <p>当年曾经好爱这电影~</p>
-                                    </div>
-                                </li>
-                            </ul>
+                        <a href=""></a>
+                        <div class="comment">
+                            <div class="comment1">
+                                <a class="comment1_a1" href=""><img src="./images/221644.78442363_128X128.jpg" alt=""/></a>
+                                <h3><a href="">继续燃烧！15年的纯爱之火</a></h3>
+                                <p class="comment1_p1"><span></span>看过《红磨坊》很多遍，它就像是一颗让人上瘾的五彩毒糖果，总是让我深深的沦陷其中：如果生命只剩最后一天，要怎么度过？答案是来一场惊心动魄的爱情吧！</p>
+                                <p class="comment1_p2"><a href="">逍遥侠客121</a><i>评</i>《<a href="">权力的游戏</a>》<strong>9.0</strong></p>
+                                <a class="comment1_a2" href=""><img src="./images/224730.29876089_75X100.jpg" alt=""/></a>
+                            </div>
+                            <div class="comment2">
+                                <div class="comment2_p">
+                                    <a href=""><img src="./images/174842.12794142_48X48.jpg" alt=""/></a>
+                                    <p><a href="">逗比的人生</a>&nbsp说:</p>
+                                    <p>如此炽热的爱情只会让两个人燃烧殆尽</p>
+                                </div>
+                                <div class="comment2_p">
+                                    <a href=""><img src="./images/174842.12794142_48X48.jpg" alt=""/></a>
+                                    <p><a href="">逗比的人生</a>&nbsp说:</p>
+                                    <p>如此炽热的爱情只会让两个人燃烧殆尽</p>
+                                </div>
+                                <div class="comment2_input">
+                                    <input type="text" placeholder="发表评论"/>
+                                    <i></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ul_div1">
-                            <ul>
-                                <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
-                                <li class="userLi">
-                                    <div>
-                                        <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
-                                        <p><a href="">方格小城</a></p>
-                                        <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
-                                    </div>
-                                </li>
-                                <li class="textLi">
-                                    <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
-                                    <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
-                                </li>
-                                <li class="replayLi">
-                                    <div>
-                                        <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
-                                        <p><a href="">简芗竹</a>：</p>
-                                        <p>当年曾经好爱这电影~</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ul_div1">
-                            <ul>
-                                <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
-                                <li class="userLi">
-                                    <div>
-                                        <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
-                                        <p><a href="">方格小城</a></p>
-                                        <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
-                                    </div>
-                                </li>
-                                <li class="textLi">
-                                    <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
-                                    <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
-                                </li>
-                                <li class="replayLi">
-                                    <div>
-                                        <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
-                                        <p><a href="">简芗竹</a>：</p>
-                                        <p>当年曾经好爱这电影~</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="ul_div1">
-                            <ul>
-                                <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
-                                <li class="userLi">
-                                    <div>
-                                        <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
-                                        <p><a href="">方格小城</a></p>
-                                        <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
-                                    </div>
-                                </li>
-                                <li class="textLi">
-                                    <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
-                                    <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
-                                </li>
-                                <li class="replayLi">
-                                    <div>
-                                        <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
-                                        <p><a href="">简芗竹</a>：</p>
-                                        <p>当年曾经好爱这电影~</p>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="fx">
+                            <a class="a1" href="#"><span></span></a><a class="a2" href=""><span></span></a>
                         </div>
                     </li>
                 </ul>
-                <div class="clear"></div>
             </div>
+            <ul id="btnUl5" class="btnList">
+                <li class="select"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <a id="leftBtn5" class="leftBtn" href="javascript:void 0;"></a>
+        <a id="rightBtn5" class="rightBtn" href="javascript:void 0;"></a>
+    </div>
+    <div class="content">
+        <div class="commentContent">
+            <ul class="commentContent_ul">
+                <li>
+                    <div class="ul_div1">
+                        <ul>
+                            <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
+                            <li class="userLi">
+                                <div>
+                                    <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
+                                    <p><a href="">方格小城</a></p>
+                                    <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
+                                </div>
+                            </li>
+                            <li class="textLi">
+                                <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
+                                <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
+                            </li>
+                            <li class="replayLi">
+                                <div>
+                                    <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
+                                    <p><a href="">简芗竹</a>：</p>
+                                    <p>当年曾经好爱这电影~</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ul_div1">
+                        <ul>
+                            <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
+                            <li class="userLi">
+                                <div>
+                                    <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
+                                    <p><a href="">方格小城</a></p>
+                                    <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
+                                </div>
+                            </li>
+                            <li class="textLi">
+                                <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
+                                <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
+                            </li>
+                            <li class="replayLi">
+                                <div>
+                                    <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
+                                    <p><a href="">简芗竹</a>：</p>
+                                    <p>当年曾经好爱这电影~</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="ul_div1">
+                        <ul>
+                            <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
+                            <li class="userLi">
+                                <div>
+                                    <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
+                                    <p><a href="">方格小城</a></p>
+                                    <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
+                                </div>
+                            </li>
+                            <li class="textLi">
+                                <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
+                                <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
+                            </li>
+                            <li class="replayLi">
+                                <div>
+                                    <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
+                                    <p><a href="">简芗竹</a>：</p>
+                                    <p>当年曾经好爱这电影~</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ul_div1">
+                        <ul>
+                            <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
+                            <li class="userLi">
+                                <div>
+                                    <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
+                                    <p><a href="">方格小城</a></p>
+                                    <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
+                                </div>
+                            </li>
+                            <li class="textLi">
+                                <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
+                                <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
+                            </li>
+                            <li class="replayLi">
+                                <div>
+                                    <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
+                                    <p><a href="">简芗竹</a>：</p>
+                                    <p>当年曾经好爱这电影~</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="ul_div1">
+                        <ul>
+                            <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
+                            <li class="userLi">
+                                <div>
+                                    <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
+                                    <p><a href="">方格小城</a></p>
+                                    <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
+                                </div>
+                            </li>
+                            <li class="textLi">
+                                <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
+                                <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
+                            </li>
+                            <li class="replayLi">
+                                <div>
+                                    <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
+                                    <p><a href="">简芗竹</a>：</p>
+                                    <p>当年曾经好爱这电影~</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ul_div1">
+                        <ul>
+                            <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
+                            <li class="userLi">
+                                <div>
+                                    <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
+                                    <p><a href="">方格小城</a></p>
+                                    <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
+                                </div>
+                            </li>
+                            <li class="textLi">
+                                <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
+                                <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
+                            </li>
+                            <li class="replayLi">
+                                <div>
+                                    <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
+                                    <p><a href="">简芗竹</a>：</p>
+                                    <p>当年曾经好爱这电影~</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="ul_div1">
+                        <ul>
+                            <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
+                            <li class="userLi">
+                                <div>
+                                    <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
+                                    <p><a href="">方格小城</a></p>
+                                    <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
+                                </div>
+                            </li>
+                            <li class="textLi">
+                                <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
+                                <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
+                            </li>
+                            <li class="replayLi">
+                                <div>
+                                    <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
+                                    <p><a href="">简芗竹</a>：</p>
+                                    <p>当年曾经好爱这电影~</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ul_div1">
+                        <ul>
+                            <li class="imgLi"><a href=""><img src="./images/155714.82352810.jpg" alt=""/></a></li>
+                            <li class="userLi">
+                                <div>
+                                    <a href=""><img src="./images/225917.21710218_128X128.jpg" alt=""/></a>
+                                    <p><a href="">方格小城</a></p>
+                                    <p class="p">评《<a href="">超人总动员</a>》 <strong>9.0</strong></p>
+                                </div>
+                            </li>
+                            <li class="textLi">
+                                <h3><a href="">哇！这是属于皮克斯的超级英雄电影</a></h3>
+                                <p>虽然大胸队长VS铁人很棒，我心里始终有一个位置，留给皮克斯在2005年推出的《超人总动员》，他是我心中最忘不掉的超级英雄电影。</p>
+                            </li>
+                            <li class="replayLi">
+                                <div>
+                                    <a href=""><img src="./images/141023.96538959_48X48.jpg" alt=""/></a>
+                                    <p><a href="">简芗竹</a>：</p>
+                                    <p>当年曾经好爱这电影~</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="clear"></div>
         </div>
     </div>
-
 
     <div class="contentListBtn">
         <div class="w960">
@@ -1012,22 +1260,83 @@
     </div>
 
 </div>
-<div id="footer" class="footer">
-    <div id="分割线" class="footLine"></div>
-    <div id="footerContent">
-        <div id="leftContent"></div>
-        <div id="cent"></div>
-        <div id="rightContent"></div>
+<div class="footer">
+    <div class="footout"><span class="topline"></span>
+        <div class="footinner clear">
+            <div class="fotlogo">
+                <dl>
+                    <dt><a href="">Mtime时光网</a></dt>
+                    <dd class="clear"><a href="">加入我们</a><a href="" class="ml30">联系我们</a></dd>
+                    <dd class="clear"><a href="">站务论坛</a><a
+                            href="" class="ml30">问题反馈</a></dd>
+                    <dd class="clear"><a href="">社区准则</a><a
+                            href="" class="ml30">网站地图</a></dd>
+                    <dd class="clear"><a href="">隐私政策</a><a
+                            href="" class="ml30">English</a></dd>
+                </dl>
+                <i class="line"></i></div>
+            <div class="fotmap">
+                <dl style="width:42px;">
+                    <dt>栏目</dt>
+                    <dd><a href="">新闻</a></dd>
+                    <dd><a href="">影院</a></dd>
+                    <dd><a href="">商城</a></dd>
+                    <dd><a href="">社区</a></dd>
+                </dl>
+                <dl style="width:185px;">
+                    <dt>推荐</dt>
+                    <dd><a href="">观影指南</a><a href="" class="ml30">电影票房</a></dd>
+                    <dd><a href="">时光对话</a><a href="" class="ml30">新片预告</a></dd>
+                    <dd><a href="">特色榜单</a><a href="" class="ml30">电影猜猜猜</a></dd>
+                    <dd><a href="">全球拾趣</a><a href="" class="ml30">卡片大富翁</a></dd>
+                </dl>
+                <dl>
+                    <dt>关注我们</dt>
+                    <dd><a href="" class="sina">微博</a></dd>
+                    <dd><a href="" class="weixin">微信</a></dd>
+                    <dd><a href="" class="rss">RSS</a></dd>
+                </dl>
+                <i class="line"></i>
+            </div>
+            <div class="fotweek" id="fotweek">
+                <dl>
+                    <dt class="clear">
+                        <span class="fr">第171期</span><strong>时光周刊</strong>
+                    </dt>
+                    <dd><a href=""><img src="./images/112955.35016667.jpg" width="170"/></a>
+                    </dd>
+                    <dd class="input">
+                        <input id="iptEMail" type="text" class="c_a5" value="邮箱地址"/>
+                        <a id="btnSubscribe" href="javascript:void(0)">订阅</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="fothr">
+                <dl>
+                    <dt><strong>手机购票</strong> 方便 实惠</dt>
+                    <dd><a href=""><i></i></a></dd>
+                    <dd>扫描二维码 下载客户端</dd>
+                </dl>
+            </div>
+        </div>
     </div>
-    <div id="copyright"><span></span></div>
-    <div id="aList">
-        <a href="">1</a>
-        <a href="">2</a>
-        <a href="">3</a>
-        <a href="">4</a>
-        <a href="">a</a>
+    <div class="db_foot">
+        <p>
+            <span>北京动艺时光网络科技有限公司</span>Copyright 2006-2016 Mtime.com Inc. All rights reserved.<br/>
+            <a href="">京ICP证050715号</a>
+            <a href="" class="mr12">网络视听许可证0108265号</a>
+            <a href="" class="mr12">网络文化经营许可证</a>
+            <a href="" class="mr12">广播电视节目制作经营许可证(京)字第1435号</a>
+            <span>京公网安备：110105000744号</span>
+        </p>
+        <div class="credible">
+            <a href="" class="credibler"></a>
+            <a href="" class="goodfaith"></a>
+        </div>
     </div>
-    <div><a href="">网站</a><a href="">xin</a></div>
 </div>
 </body>
+<script src="./js/DOM.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/jackTween.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
 </html>

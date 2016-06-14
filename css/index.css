@@ -1,28 +1,24 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: helvetica, Œ¢»Ì—≈∫⁄, "microsoft yahei", verdana, lucida, arial, sans-serif, ∫⁄ÃÂ;
+    font-family: helvetica, ÂæÆËΩØÈõÖÈªë, "microsoft yahei", verdana, lucida, arial, sans-serif, Èªë‰Ωì;
     font-size: 14px;
     font-style: normal;
     color: #333333;
     list-style: none;
     -webkit-user-select: none;
 }
-/*html,body{*/
-/*background: #000000;*/
-/*opacity: 0.9;*/
-/*}*/
 img,input{
     border: none;
     outline: none;
-    /*µ„ª˜∫Û input≥ˆœ÷µƒ±ﬂøÚ*/
-    vertical-align: middle;/*¥π÷±æ”÷–*/
+    /*ÁÇπÂáªÂêé inputÂá∫Áé∞ÁöÑËæπÊ°Ü*/
+    vertical-align: middle;/*ÂûÇÁõ¥Â±Ö‰∏≠*/
 }
-.clear{
-    clear: both;
+.clear:after {
+    display: block;
     height: 0;
-    line-height: 0;
-    font-size: 0;
+    content: "";
+    clear: both;
 }
 a{
     text-decoration: none;
@@ -37,16 +33,16 @@ a:hover{
     margin: 0 auto;
 }
 .min1100{
-    min-width: 1100px;
+    min-width: 1000px;
 }
 .header{
     /*position: relative;*/
 }
 .header .headerBG{
     display: block;
-    height: 106px;
-    background: #000000;
-    background: url("../images/081611.78267125.jpg") center top;
+    height: 110px;
+    /*background: #000000;*/
+    background: url("../images/bg2.jpg") center top;
 }
 .header .headerCenter{
     position: relative;
@@ -105,7 +101,7 @@ a:hover{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.5);
-    z-index: 1;
+    z-index: 20;
 }
 .header .centerLogo a{
     display: block;
@@ -134,15 +130,23 @@ a:hover{
 
 
 .subject{
+    position: relative;
     width: 100%;
-    min-width: 1100px;
+    min-width: 1000px;
     /*background: url("images/182820.88515073.jpg") no-repeat center top;*/
 }
+.subject .nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
 .subject .listBtn{
-    position: relative;
-    margin: 0 auto;
-    height: 80px;
-    z-index: 1;
+    /*margin: 0 auto;*/
+    /*left: 10%;*/
+    /*width: 1000px;*/
+    /*height: 74px;*/
 }
 .subject .listBtn ul,.subject .listBtn li{
     float: left;
@@ -151,22 +155,19 @@ a:hover{
 }
 .subject .listBtn_left li{
     margin-right: 20px;
-    padding: 5px;
-
+    padding: 5px 5px 8px 5px;
 }
 .subject .listBtn_left li a{
     font-size: 16px;
     color: #ffffff;
 }
 .subject .listBtn_left li.on{
-    /*font-weight: 800;*/
-    padding-bottom: 8px;
     border-bottom: 5px solid #ffffff;
 }
 
 .subject .listBtn_right{
-   position: absolute;
-    right: 20px;
+    float: right;
+    margin-left: 320px;
     height: 29px;
     font-size: 14px;
     line-height: 1;
@@ -178,19 +179,36 @@ a:hover{
     padding:0px;
 }
 .subject .listBtn_right li a{
+    margin: 0;
+    padding: 0;
     display: inline-block;
     height: 100%;
+    line-height: 100%;
 }
 .subject .listBtn_right li span{
+    display: inline-block;
+    padding: 0 10px;
+    height: 27px;
+    line-height: 27px;
     color: #ffffff;
 }
-.subject .listBtn_right li i{
-    display: inline-block;
+.subject .listBtn_right li .log span{
+    border-right: 1px solid rgba(255,255,255,0.8);
+}
+.subject .listBtn_right li .log i{
+    float: right;
     margin: 3px auto 0;
     padding-left: 1px;
     width: 28px;
     height: 22px;
     background: url("../images/topbar_03.png") no-repeat;
+}
+.subject .listBtn_right li .in i{
+    float: right;
+    margin-right: 10px;
+    width: 11px;
+    height: 24px;
+    background: url("../images/topbar_02.png") no-repeat;
 }
 .subject .listBtn_right li:nth-child(3) i{
     margin: 5px;
@@ -201,44 +219,174 @@ a:hover{
     height: 16px;
 }
 
-.subject1_bg .subject1_bg1{
-    position: absolute;
-    top: 115px;
-    left: 0;
-    width: 100%;
-    min-width: 1100px;
-    height: 500px;
-    /*background: rgba(0,0,0,.5);*/
-    background: url("../images/182820.88515073.jpg") no-repeat center top;
-    /*background: url("../images/143334.50101803.jpg") no-repeat center top;*/
-    z-index: 0;
-}
+
+/*--ËΩÆÊí≠Âõæ--*/
 .subject1{
+    height: 406px;
     position: relative;
-    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+    padding-top: 94px;
 }
+.subject1 .subject1_bg{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.subject1 .subject1_bg li{
+    background: url("") repeat-x center 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    opacity: 0;
+}
+.subject1 .subject1_bg li.bg1{
+    opacity: 1;
+    background-image: url("../images/bg1.jpg");
+}
+.subject1 .subject1_bg li.bg2{
+    background-image: url("../images/bg2.jpg");
+}
+.subject1 .subject1_bg li.bg3{
+    background-image: url("../images/bg3.jpg");
+}
+.subject1 .subject1_bg li.bg4{
+    background-image: url("../images/bg4.jpg");
+}
+.subject1 .subject1_bg li.bg5{
+    background-image: url("../images/bg5.jpg");
+}
+.subject1 .subject2_bg{
+    top: 32px;
+}
+.subject1 .subject2_bg li.bg1{
+    opacity: 1;
+    background-image: url("../images/bg21.jpg");
+}
+.subject1 .subject2_bg li.bg2{
+    background-image: url("../images/bg22.jpg");
+}
+.subject1 .subject4_bg{
+    top: 34px;
+}
+.subject1 .subject4_bg li.bg1{
+    opacity: 1;
+    background-image: url("../images/bg41.jpg");
+}
+.subject1 .subject4_bg li.bg2{
+    background-image: url("../images/bg42.jpg");
+}
+.subject1 .subject4_bg li.bg3{
+    background-image: url("../images/bg43.jpg");
+}
+.subject1 .subject4_bg li.bg4{
+    background-image: url("../images/bg44.jpg");
+}
+.subject1 .subject4_bg li.bg5{
+    background-image: url("../images/bg45.jpg");
+}
+.innerList4 li,.innerList5 li{
+    width: 100%;
+    height: 100%;
+}
+.innerList4 li a,.innerList5 li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.subject1 .subject5_bg{
+    top: 34px;
+}
+.subject1 .subject5_bg li.bg1{
+    opacity: 1;
+    background-image: url("../images/bg51.jpg");
+}
+.subject1 .subject5_bg li.bg2{
+    background-image: url("../images/bg52.jpg");
+}
+.subject1 .subject5_bg li.bg3{
+    background-image: url("../images/bg53.jpg");
+}
+.subject5 .banner .inner .innerList5 li .fx{
+    right: 380px;
+}
+
+
+
 .banner{
-    position: relative;
-    margin-top: 14px;
-    margin-left: -12px;
-    padding:11px 11px 0;
-    width: 1000px;
+    padding: 11px 11px 0 11px;
     background: url("../images/index_shadow.png") no-repeat 0 0;
+    /*background: rgba(0,0,0,.8);*/
+    width: 1000px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 4;
+    /*top: -30px;*/
 }
 .banner .inner{
     width: 1000px;
-    height: 360px;
-
+    overflow: hidden;
+    position: relative;
 }
-.banner .inner div{
+.banner .inner .innerList{
     width: 1000px;
+    height: 360px;
+    position: relative;
+    zoom: 1;
+    z-index: 2;
 }
+.banner .inner .innerList li{
+    width: 1000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.banner .inner .innerList li img{
+    border: 0;
+    width: 1000px;
+    height: 360px;
+}
+.banner .inner .innerList li.on{
+    opacity: 1;
+}
+.banner .inner .innerList li .fx{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 6px;
+}
+.banner .inner .innerList li .fx a{
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/mtimebar.png") no-repeat;
+    margin: 0 3px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 0 0 5px 5px;
+}
+.banner .inner .innerList li .fx .a1{
+    background-position: 0 -511px;
+}
+.banner .inner .innerList li .fx .a2{
+    background-position: -47px -511px;
+}
+
 .banner .btnList{
     position: absolute;
     right: 80px;
     bottom: 20px;
     height: 14px;
     line-height: 14px;
+    z-index: 10;
 }
 .banner .btnList li{
     float: left;
@@ -264,43 +412,48 @@ a:hover{
     border-radius: 20px;
     background: rgba(0,0,0,.5);
     color: #ffffff;
+    z-index: 10;
 }
 .banner .more:hover{
     background: none;
 }
 .subject1 .leftBtn,.subject1 .rightBtn{
     position: absolute;
-    top: 50%;
-    margin-top: -198px;
+    top: 200px;
+    left: 50%;
     width: 50px;
     height: 104px;
     background-image: url("../images/allicon24.png");
     opacity: 0.5;
+    z-index: 10;
 }
 .subject1 .leftBtn:hover,.subject1 .rightBtn:hover{
     opacity: 0.9;
 }
 .subject1 .leftBtn{
-    left: -40px;
+    margin-left: -539px;
     background-position: 0 -290px;
 }
 .subject1 .rightBtn{
-    right: -40px;
+    margin-left: 489px;
     background-position: -50px -290px;
 }
-.subject1 .content{
-    margin-left: -12px;
+
+.content{
+    position: relative;
+    margin: -35px auto 0;
     padding:0 11px;
     width: 1000px;
     background: url("../images/index_shadow.png") no-repeat 0 -310px;
+    z-index: 10;
 }
-.subject1 .contentInner{
+.contentInner{
     padding: 40px 20px 0;
     height: 300px;
     background-color: #ffffff;
 }
 /*news*/
-.subject1 .contentInner div{
+.contentInner div{
     float: left;
 }
 /*newsLeft*/
@@ -489,7 +642,7 @@ a:hover{
     background-position: -268px -68px;
 }
 
-/*–°¬÷≤•Õº*/
+/*Â∞èËΩÆÊí≠Âõæ*/
 .fun{
     height: 120px;
     position: relative;
@@ -509,7 +662,7 @@ a:hover{
     margin-top: 28px;
     position: absolute;
     left: 0;
-    width: 2500px;
+    /*width: 2500px;*/
 }
 .fun .fun_inner li{
     float: left;
@@ -520,17 +673,37 @@ a:hover{
     display: inline;
     text-align: center;
 }
+.fun .fun_inner li:last-child a{
+    margin: 0 auto;
+    line-height: 74px;
+    text-align: center;
+}
+.fun .fun_inner li:last-child i{
+    display: inline-block;
+    margin-left: 5px;
+    width: 6px;
+    height: 12px;
+    background: url("../images/index.jpg") no-repeat -262px -68px;
+}
+.fun .fun_inner li:last-child a:hover i{
+    background-position: -268px -68px;
+}
+
+
 .fun .fun_inner li a{
+    position: relative;
     display: block;
     width: 240px;
-    margin-top: -123px;
+    margin-top: -36px;
     text-align: right;
+    z-index: 1;
 }
 .fun .fun_inner li a img{
     width: 100px;
     height: 115px;
 }
 .fun .fun_inner li div{
+    margin-top: -80px;
     height: 87px;
 }
 .fun .fun_inner li div h3{
@@ -577,15 +750,20 @@ a:hover{
     right: -10px;
 }
 
-/*∞¥≈•¡–±Ì*/
+.fun .fun_left:hover{
+    background-position: -48px -114px;
+}
+.fun .fun_right:hover{
+    background-position: -72px -114px;
+}
+
+/*ÊåâÈíÆÂàóË°®*/
 .contentListBtn{
     padding-top: 28px ;
-    padding-bottom: 50px;
-    /*background: rgba(0,0,0,0.3)*/
 }
 .contentListBtn .w960{
     width: 960px;
-    height: 90px;
+    height: 50px;
     margin: 10px auto;
 
 }
@@ -612,20 +790,23 @@ a:hover{
 }
 
 /*sub*/
-.subject2_bg{
-    position: absolute;
-    top:1490px;
-    width: 100%;
-    min-width: 1100px;
-    height: 500px;
-    background: url("../images/145939.99458859.jpg") no-repeat center top;
+
+.MovieContent{
+    position: relative;
+    height: 280px;
+}
+.MovieContent li.li1{
+    opacity: 1;
 }
 .MovieContentInner{
+    opacity: 0;
+    position: absolute;
     padding: 30px 20px 25px;
-    /*height: 300px;*/
     min-height: 165px;
     background-color: #ffffff;
+    width: 960px;
 }
+
 .MovieContentInner .MovieContentInner_left{
     float: left;
     display: inline;
@@ -846,10 +1027,11 @@ a:hover{
 }
 .subject3 .subject3_2 .subject3_2_left .border{
     width: 7px;
-    height: 10px;
+    height: 9px;
     position: absolute;
     right: -8px;
     top: 0;
+    background: url("../images/border.png")no-repeat -1px 0;
 }
 .subject3 .subject3_2 .subject3_2_left .changeCity{
     width: 225px;
@@ -931,7 +1113,6 @@ a:hover{
     float: right;
     display: inline;
     padding-top: 35px;
-    margin-right: 11px;
 }
 .subject3 .subject3_2 .subject3_2_right .subject3_2_rightInner{
     position: relative;
@@ -943,9 +1124,6 @@ a:hover{
     position: absolute;
     top: 130px;
 }
-.subject3 .subject3_2 .subject3_2_right .subject3_2_rightInner .rightInnerBtn:hover{
-    background-position: -48px -114px;
-}
 .subject3 .subject3_2 .subject3_2_right .subject3_2_rightInner .rightInner_left{
     background-position: 0 -114px;
     left: -31px;
@@ -954,14 +1132,28 @@ a:hover{
     background-position: -24px -114px;
     right: -31px;
 }
-.subject3 .subject3_2 .subject3_2_right .subject3_2_rightInner .rightInner_shadow{
+.subject3 .subject3_2 .subject3_2_right .subject3_2_rightInner .rightInner_left:hover{
+    background-position: -48px -114px;
+}
+.subject3 .subject3_2 .subject3_2_right .subject3_2_rightInner .rightInner_right:hover{
+    background-position: -72px -114px;
+}
+
+
+.subject3 .subject3_2 .subject3_2_right .subject3_2_rightInner .rightInner_shadowL,
+.subject3 .subject3_2 .subject3_2_right .subject3_2_rightInner .rightInner_shadowR{
     background: url("../images/index_shadow.png") no-repeat 0 0;
-    height: 240px;
+    height: 252px;
     width: 10px;
     position: absolute;
     right: 0;
     top: -40px;
     z-index: 2;
+}
+.subject3 .subject3_2 .subject3_2_right .subject3_2_rightInner .rightInner_shadowL{
+    position: absolute;
+    left: 0;
+    background-position: -1011px 0;
 }
 
 .subject3 .subject3_2 .subject3_2_right .subject3_2_rightInner .rightInner_content{
@@ -970,7 +1162,9 @@ a:hover{
     width: 695px;
 }
 .subject3_2_rightInner .rightInner_content ul{
-    width: 2044px;
+    /*width: 2044px;*/
+    position: relative;
+    left: 0;
 }
 .subject3_2_rightInner .rightInner_content ul li{
     float: left;
@@ -1027,7 +1221,7 @@ a:hover{
     position: relative;
     border-top: 2px dashed #d9d9d9;
     width: 960px;
-
+    margin-left: -5px;
 }
 .subject3 .subject3_3 .leftBtn,.subject3 .subject3_3 .rightBtn{
     position: absolute;
@@ -1037,8 +1231,11 @@ a:hover{
     height: 59px;
     background: url("../images/index.jpg") no-repeat;
 }
-.subject3 .subject3_3 .leftBtn:hover,.subject3 .subject3_3 .rightBtn:hover{
+.subject3 .subject3_3 .leftBtn:hover{
     background-position: -48px -114px;
+}
+.subject3 .subject3_3 .rightBtn:hover{
+    background-position: -72px -114px;
 }
 .subject3 .subject3_3 .leftBtn{
     background-position: 0 -114px;
@@ -1048,13 +1245,19 @@ a:hover{
     background-position: -24px -114px;
     right: -31px;
 }
-.subject3 .subject3_3 .subject3_3_shadow{
+.subject3 .subject3_3 .subject3_3_shadowL,
+.subject3 .subject3_3 .subject3_3_shadowR{
     position: absolute;
     top: 7px;
     width: 10px;
     right: 0;
-    height: 200px;
-    background: url("../images/index_shadow.png") no-repeat 0 0;
+    height: 210px;
+    background: url("../images/index_shadow.png") no-repeat -1px 0;
+    z-index: 1;
+}
+.subject3 .subject3_3 .subject3_3_shadowL{
+    left: 0;
+    background-position: -1011px 0;
 }
 .subject3_3_content{
     width: 960px;
@@ -1063,12 +1266,13 @@ a:hover{
     margin-top: -9px;
 }
 .subject3_3_content ul{
-    width: 4765px;
+    /*width: 4765px;*/
     position: relative;
+    left: 0;
 }
 .subject3_3_content ul li{
+    float: left;
     width: 295px;
-    display: inline-block;
     margin-right: 16px;
 }
 .subject3_3_content ul li p{
@@ -1149,15 +1353,6 @@ a:hover{
 }
 
 /*sub4*/
-.subject4_bg{
-    position: absolute;
-    top:3021px;
-    width: 100%;
-    min-width: 1100px;
-    height: 500px;
-    background: url("../images/145939.99458859.jpg") no-repeat center top;
-}
-
 .subject4 .leftBtn,.subject4 .rightBtn{
     margin-top: 0;
 }
@@ -1241,6 +1436,7 @@ a:hover{
 
 .bayCenter_2{
     position: relative;
+    z-index: 10;
 }
 .bayCenter_2 .bayCenter_2leftBtn,.bayCenter_2 .bayCenter_2rightBtn{
     background: url("../images/indexmall.png") no-repeat 0 0;
@@ -1294,17 +1490,29 @@ a:hover{
     position: relative;
     z-index: 1;
 }
-.bayCenter_2 .bayCenter_2content .li1{
+.bayCenter_2 .bayCenter_2content .li1,.bayCenter_2 .bayCenter_2content .li2,.bayCenter_2 .bayCenter_2content .li3,.bayCenter_2 .bayCenter_2content .li4{
     width: 960px;
     height: 400px;
     position: absolute;
     left: 0;
     top: 0;
     background: url("../images/174139.88708486.jpg")no-repeat center 0;
-    opacity: 1;
-    z-index: 1;
+    opacity: 0;
+    z-index: 2;
 }
-.bayCenter_2 .bayCenter_2content .li1 .ul1,.bayCenter_2 .bayCenter_2content .li1 .ul2 {
+.bayCenter_2 .bayCenter_2content .li1{
+    opacity: 1;
+}
+.bayCenter_2 .bayCenter_2content .li2{
+    background: url("../images/104214.84921534.jpg")no-repeat center 0;
+}
+.bayCenter_2 .bayCenter_2content .li3{
+    background: url("../images/192437.42124716.jpg")no-repeat center 0;
+}
+.bayCenter_2 .bayCenter_2content .li4{
+    background: url("../images/174139.88708486.jpg")no-repeat center 0;
+}
+.bayCenter_2 .bayCenter_2content li .ul1,.bayCenter_2 .bayCenter_2content li .ul2 {
     position: absolute;
     top: 20px;
     padding-left: 10px;
@@ -1312,39 +1520,35 @@ a:hover{
     height: 360px;
     background: #ffffff;
 }
-.bayCenter_2 .bayCenter_2content .li1 .ul1{
+.bayCenter_2 .bayCenter_2content li .ul1{
     left: 20px;
 }
-.bayCenter_2 .bayCenter_2content .li1 .ul2{
+.bayCenter_2 .bayCenter_2content li .ul2{
     right: 20px;
 }
 
-
-.subject5_bg{
+/*{*/
+    /*float: left;*/
+    /*display: inline;*/
+    /*padding: 25px 30px 10px;*/
+    /*width: 565px;*/
+/*}*/
+#subject5 .banner .inner .innerList li .comment{
     position: absolute;
-    top:4418px;
-    width: 100%;
-    min-width: 1100px;
-    height: 500px;
-    background: url("../images/145939.99458859.jpg") no-repeat center top;
-}
-
-.subject5 .banner .comment{
-    position: absolute;
-    top: 10px;
-    left: 11px;
+    top: 0;
+    left: 0;
     padding: 20px 30px 10px;
     width: 565px;
     background: #ffffff;
 }
-.subject5 .banner .comment .comment1{
+.subject5 .banner .inner .innerList li .comment .comment1{
     position: relative;
     padding: 0 0 10px 80px;
     width: 485px;
     min-height: 60px;
     border-bottom: 1px dotted #ccc;
 }
-.comment .comment1 .comment1_a1 img{
+.subject5 .banner .inner .innerList li .comment .comment1 .comment1_a1 img{
     position: absolute;
     left: 0;
     top: 0;
@@ -1352,48 +1556,50 @@ a:hover{
     width: 60px;
     height: 60px;
 }
-.comment .comment1 h3 a{
+.subject5 .banner .inner .innerList li .comment .comment1 h3 a{
     font-size: 34px;
     font-weight: normal;
 }
-.comment .comment1 p{
+.subject5 .banner .inner .innerList li .comment .comment1 p{
     margin-top: 18px;
     font-size: 16px;
 }
-.comment .comment1 .comment1_p1 span{
+.subject5 .banner .inner .innerList li .comment .comment1 .comment1_p1 span{
     background: url("../images/index.jpg") no-repeat -237px 0;
     width: 25px;
     height: 21px;
     display: inline-block;
     margin: 0 10px;
 }
-.comment .comment1 .comment1_p2 i{
+.subject5 .banner .inner .innerList li .comment .comment1 .comment1_p2 i{
     margin-left: 6px;
 }
-.comment .comment1 .comment1_p2 strong{
+.subject5 .banner .inner .innerList li .comment .comment1 .comment1_p2 strong{
     background: #679c21;
     padding: 4px 5px 4px;
     line-height: 14px;
     color: #fff;
 }
-.comment .comment1 .comment1_a2 img{
+.subject5 .banner .inner .innerList li .comment .comment1 .comment1_a2 img{
     position: absolute;
     right: 0;
     bottom: -60px;
+    width: 75px;
+    height: 100px;
     border: 1px solid #ccc;
 }
-.banner .inner .comment .comment2{
+.subject5 .banner .inner .innerList li .comment .comment2{
     padding-left: 80px;
     width: 365px;
 }
-.comment .comment2 a{
+.subject5 .banner .inner .innerList li .comment .comment2 a{
     color: #6c6c6c;
 }
-.comment .comment2 p{
+.subject5 .banner .inner .innerList li .comment .comment2 p{
     color: #6c6c6c;
 }
 
-.comment .comment2 .comment2_p{
+.subject5 .banner .inner .innerList li .comment .comment2 .comment2_p{
     position: relative;
     padding-left: 50px;
     width: 325px;
@@ -1402,7 +1608,7 @@ a:hover{
     color: #6c6c6c;
     margin-top: 10px;
 }
-.comment .comment2 .comment2_p a img{
+.subject5 .banner .inner .innerList li .comment .comment2 .comment2_p a img{
     position: absolute;
     left: 0;
     top: 3px;
@@ -1410,18 +1616,21 @@ a:hover{
     width: 30px;
     height: 30px;
 }
-.comment .comment2 .comment2_input{
-    margin-top: 18px;
+.subject5 .banner .inner .innerList li .comment .comment2 .comment2_input{
+    margin: 12px 0 4px 0;
     width: 365px;
     height: 30px;
     position: relative;
     border: 1px solid #d6d6d6;
     padding: 3px 10px;
 }
-.comment .comment2 .comment2_input input{
+.subject5 .banner .inner .innerList li .comment .comment2 .comment2_input input{
+    position: absolute;
+    width: 90%;
     line-height: 32px;
+    z-index: 1;
 }
-.comment .comment2 .comment2_input i{
+.subject5 .banner .inner .innerList li .comment .comment2 .comment2_input i{
     background: url("../images/allicon24.png") no-repeat -110px 0;
     width: 12px;
     height: 13px;
@@ -1525,10 +1734,9 @@ a:hover{
 
 
 
-.footer{
-    margin-top: -80px;
-}
-
+/*.footer{*/
+    /*margin-top: -80px;*/
+/*}*/
 
 
 
