@@ -11,9 +11,6 @@
         }
     }
 }();
-
-
-
 //图片延迟加载
 ~function(){
     // 首先获取所有的图片集合
@@ -53,11 +50,6 @@
 
 
 }();
-
-
-
-
-
 
 //->轮播图
 /*第一区域*/
@@ -423,10 +415,6 @@ function move(banner,innerList,subjectBgList,btnList,leftBtn,rightBtn,MovieConte
             }
         }
     }
-
-
-
-
 }();
 
 
