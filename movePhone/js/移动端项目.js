@@ -10,14 +10,14 @@
     var swp = new Swiper(".swiper-container", {
         loop: true,
         direction: 'vertical',
-        onSlidePrevEnd: function () {
+        onSlidePrevStart: function () {
             step--;
             change();
             if (step === 0) {
                 step = 5;
             }
         },
-        onSlideNextEnd: function () {
+        onSlideNextStart: function () {
             step++;
             change();
             if (step === 6) {

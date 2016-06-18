@@ -210,8 +210,8 @@ html, body {
 }
 .pageFir img:nth-child(8) {
     z-index: 2;
-    top: 50%;
-    left: 11%;
+    top: 5.5rem;
+    left: 0.7rem;
     height: 1.5rem;
     width: 5rem;
 }
@@ -336,8 +336,8 @@ html, body {
 }
 /*--第三页的样式--*/
 .page3 >img:nth-child(1) {
-    top: 3.8rem;
     left: -0.5rem;
+    bottom: 0.1rem;
     width: 12.54rem;
     height: 7.42rem;
 }
@@ -628,6 +628,7 @@ html, body {
     height: 1.2rem;
 }
 .page5>div{
+    opacity: 0;
     position: absolute;
     top: 5.5rem;
     left: 1rem;
@@ -664,6 +665,7 @@ html, body {
     animation: fadeInLeft 2s 3s both;
 }
 #page5>div{
+    opacity: 1;
     -webkit-animation: flipInY 2s 4s both;
     animation: flipInY 2s 4s both;
 }
